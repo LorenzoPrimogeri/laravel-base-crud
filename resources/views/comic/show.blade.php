@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0510089784.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
@@ -97,8 +98,14 @@
                             <div class="row">
                                 <div class="col-4 c-darkblue">action:</div>
                                 <div class="col-8">
-                                    <a href="{{route('comic.edit', $card->id)}}">edit</a>/
-                                    <a href="">remove</a>
+                                    <a href="{{route('comic.edit', $card->id)}}">edit </a>/
+                                    <form class="d-inline" action="{{route('comic.destroy',$card->id)}}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <input name="_method" type="hidden" value="DELETE">
+                                        <button class="border0 show_confirm" onclick="return confirm('Are you sure?')"
+                                            type="submit">remove</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>

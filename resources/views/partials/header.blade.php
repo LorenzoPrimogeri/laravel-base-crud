@@ -15,7 +15,7 @@
           <div class="col-9 d-flex align-items-center justify-content-end">
             <ul class="header-list">
               <li>CHARACTERS</li>
-              <li>COMICS </li>
+              <li><a href="{{route('comic.index')}}">COMICS</a></li>
               <li>MOVIES</li>
               <li>TV</li>
               <li>GAMES</li>
