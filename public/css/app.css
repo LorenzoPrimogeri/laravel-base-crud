@@ -1,0 +1,182 @@
+/*formattazione*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    padding: 0px 10px;
+    display: inline;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: grey !important;
+}
+
+/*/formattazione*/
+/*utility*/
+.bg-blue {
+    background-color: hsl(209deg 98% 49%);
+}
+
+.border-b {
+    border-bottom: 1px solid rgb(177, 176, 176);
+}
+
+.border-t {
+    border-top: 1px solid rgb(177, 177, 177);
+}
+
+.bg-lightgrey {
+    background-color: hsl(0deg 0% 96%);
+}
+
+.bg-lightgreen {
+    background-color: hsl(122deg 42% 53%);
+}
+
+.bg-lightblue {
+    background-color: hsl(193deg 100% 43%);
+}
+
+.bg-black {
+    background-color: hsl(0deg 0% 11%);
+}
+
+.c-grey {
+    color: grey;
+}
+
+.c-red {
+    color: red;
+}
+
+.c-darkblue {
+    color: hsl(200deg 100% 18%);
+}
+
+.c-white {
+    color: white !important;
+}
+
+.c-blue {
+    color: hsl(209deg 98% 49%);
+}
+
+.lp-btn {
+    border: 1px solid white;
+    padding: 5px 40px;
+}
+
+/*/utility*/
+/*header*/
+.space {
+    height: 30px;
+    background-color: hsl(209deg 98% 49%);
+}
+
+header .container-fluid {
+    padding: 0;
+}
+
+.header-list li {
+    font-weight: 700;
+}
+
+/*/header*/
+
+/**main**/
+
+.jt-image {
+    background-image: url("../images/jumbotron.jpg");
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sizeImg {
+    padding-right: 5px;
+    width: 60px;
+}
+.position-absolute.h1{
+    right:  0px;
+    top: -12px;
+}
+/*/main**/
+/*Main Card Info*/
+
+.position-absolute.img {
+    bottom: 15px;
+    border: 2px solid white;
+}
+
+.position-absolute.type {
+    top: 0px;
+}
+
+.position-absolute.gallery {
+    bottom: 0px;
+}
+
+img[alt="ImageData"]{
+    height: 60px;
+}
+/*/Main Card Info*/
+/**footer*/
+.footer .jumbo_footer {
+    background-image: url("/images/footer-bg.jpg");
+    background-repeat: repeat-x;
+}
+
+footer .container_footer_list h3 {
+    color: white;
+}
+
+footer .container_footer_list a {
+    color: grey;
+}
+
+footer .container_footer_list a:hover {
+    color: white;
+}
+
+footer .container_logo_dc {
+    height: 482px;
+}
+
+footer .logo_dc_bg {
+    background-image: url("../images/dc-logo-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+footer .footer_socials {
+    background-color: #303030;
+}
+
+footer .footer_socials .sign_up_footer {
+    color: white;
+    padding: 10px;
+    border: 2px solid #0282f9;
+}
+
+footer .footer_socials .sign_up_footer:hover {
+    background-color: #0282f9;
+}
+
+footer .footer_socials .follow_footer {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0282f9;
+}
+
+/*/footer**/

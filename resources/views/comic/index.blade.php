@@ -9,9 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0510089784.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
+    @include('partials.header');
     <main>
         <div class="container-fluid bg-secondary">
             <div class="container p-0 position-relative">
@@ -31,16 +33,17 @@
                                     <a class="text-white" href="">{{ $comic['price'] }}</a>
                                 </div>
                             </div>
+                        </a>
                     </div>
-                    </a>
                     @endforeach
                 </div>
                 <div class="text-center py-3">
-                    <a class="c-white lp-btn bg-blue" href="">Load More</a>
+                    <a class="text-white lp-btn bg-blue" href="{{route('comic.create')}}">add Comic</a>
                 </div>
             </div>
         </div>
     </main>
+    @include('partials.footer')
 </body>
 
 </html>
