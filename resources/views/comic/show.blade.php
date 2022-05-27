@@ -10,6 +10,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/0510089784.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" />
+    <script src="/path/to/cdn/jquery.min.js"></script>
+    <script src="/path/to/cdn/bootstrap.min.js"></script>
+    <script src="confirmbutton.js"></script>
+
     <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -103,7 +109,8 @@
                                         @csrf
                                         @method('DELETE')
                                         <input name="_method" type="hidden" value="DELETE">
-                                        <button class="border0 show_confirm" onclick="return confirm('Are you sure?')"
+
+                                        <button class="border0" onclick="return confirm('Are your sure?')"
                                             type="submit">remove</button>
                                     </form>
                                 </div>

@@ -32,10 +32,6 @@
                                     <a class="text-white w-100" href="">{{ $comic['type'] }}</a>
                                     <a class="text-white" href="">{{ $comic['price'] }}</a>
                                 </div>
-                                <div class="d-flex flex-column">
-                                    <a class="text-white w-100" href="">{{ $comic['type'] }}</a>
-                                    <a class="text-white" href="">{{ $comic['price'] }}</a>
-                                </div>
                             </div>
                         </a>
                     </div>
